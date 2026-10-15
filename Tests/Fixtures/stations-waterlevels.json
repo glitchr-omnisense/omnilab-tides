@@ -1,0 +1,51 @@
+{
+    "count": 5,
+    "units": null,
+    "stations": [
+        {
+            "id": "8461490",
+            "name": "New London",
+            "lat": 41.371666,
+            "lng": -72.09556,
+            "state": "CT",
+            "tidal": true,
+            "greatlakes": false
+        },
+        {
+            "id": "8516945",
+            "name": "Kings Point",
+            "lat": 40.8103,
+            "lng": -73.7649,
+            "state": "NY",
+            "tidal": true,
+            "greatlakes": false
+        },
+        {
+            "id": "8518750",
+            "name": "The Battery",
+            "lat": 40.700554,
+            "lng": -74.01417,
+            "state": "NY",
+            "tidal": true,
+            "greatlakes": false
+        },
+        {
+            "id": "8531680",
+            "name": "Sandy Hook",
+            "lat": 40.4669,
+            "lng": -74.0094,
+            "state": "NJ",
+            "tidal": true,
+            "greatlakes": false
+        },
+        {
+            "id": "9414290",
+            "name": "San Francisco",
+            "lat": 37.806305,
+            "lng": -122.46589,
+            "state": "CA",
+            "tidal": true,
+            "greatlakes": false
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/tides",
+    "type": "library",
+    "description": "Omnilab Tides: NOAA CO-OPS (Tides and Currents) - a station's water level every six minutes, verified hourly heights and highs and lows, tide predictions (every six minutes, hourly, or the highs and lows), water and air temperature as series, at a station named or the nearest one of a point, cut to the API's length limits; a station as an entity; through the CO-OPS Data and Metadata APIs, no key needed.",
+    "keywords": [
+        "science",
+        "earth-sciences",
+        "oceanography",
+        "tides",
+        "water-level",
+        "noaa",
+        "co-ops",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Tides\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Tides\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
