@@ -1,6 +1,6 @@
 # omnilab/tides
 
-NOAA's tides and water levels for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab), from
+NOAA's tides and water levels for [omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab), from
 the Center for Operational Oceanographic Products and Services (CO-OPS, Tides and Currents): a
 station's water level observed every six minutes, its verified hourly heights and highs and lows,
 its tide predictions (every six minutes, hourly, or the highs and lows), its water and air
