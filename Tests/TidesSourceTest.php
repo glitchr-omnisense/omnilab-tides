@@ -130,7 +130,9 @@ final class TidesSourceTest extends TestCase
         self::assertSame([0.485, 0.739, 0.962, 1.107], \array_slice($predicted->values(), 0, 4));
         self::assertTrue($predicted->forecast);
         self::assertSame(['waterlevels', '8518750', 'h'], [$this->calls[0][1]['type'], $this->calls[1][1]['station'], $this->calls[1][1]['interval']]);
-        self::assertSame([], $this->source()->series(new SeriesQuery(['water_level'], new Point(0, -150))));
+        [$none] = $this->source()->series(new SeriesQuery(['water_level'], new Point(0, -150)));
+        self::assertSame(['water_level', 'm', [], 'tides'], [$none->variable, $none->unit, $none->points, $none->source], 'no station near: a series without points');
+        self::assertEquals(new Point(0, -150), $none->place);
     }
 
     public function testADatumOption(): void

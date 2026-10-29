@@ -151,7 +151,8 @@ final class TidesSource extends HttpSource
         if (null === $station) {
             $nearest = $this->nearest($query->place);
             if (null === $nearest) {
-                return [];
+                // No station near: a series without points per variable, at the point asked.
+                return array_map(static fn (string $v) => new Series($v, self::VARIABLES[$v][2], $query->place, [], self::VARIABLES[$v][5] ? null : $query->step, self::VARIABLES[$v][5] ? null : $query->aggregation, null, self::VARIABLES[$v][4], 'tides'), $query->variables);
             }
             [$station, $place, $name] = $nearest;
         } else {

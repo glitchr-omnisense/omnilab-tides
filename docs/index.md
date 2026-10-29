@@ -54,7 +54,7 @@ The factory's options, with the defaults it applies (`TidesSourceFactory`):
 |---|---|---|
 | `entity` | yes | a CO-OPS station (`coops:8518750`, `coops.station:`, its page, its Metadata API record); another scheme refused before any call; one call |
 | `search` | no |  |
-| `series` | yes | the variables of [Calls](#calls) at a `coops.station` or at the nearest water level station of a `Point` within `radius_km`; one call per variable and per slice of the API's length limit; no station near: an empty list |
+| `series` | yes | the variables of [Calls](#calls) at a `coops.station` or at the nearest water level station of a `Point` within `radius_km`; one call per variable and per slice of the API's length limit; no station near: a series without points per variable, at the point; an unknown station: an empty list |
 | `products` | no |  |
 | `occurrences` | no |  |
 | `datasets` | no |  |
