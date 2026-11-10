@@ -1,0 +1,181 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Binary operation "\." between array\<mixed\>\|string and ''\-'' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Binary operation "\." between mixed and string results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$domain on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$id on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$kind on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$label on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$place on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot access property \$url on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot call method value\(\) on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: method.nonObject
+			count: 5
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Cannot cast array\<mixed\>\|string to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Method Omnilab\\Tides\\Tests\\TidesSourceTest\:\:source\(\) has parameter \$options with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omnilab\\Source\\SourceFactory\:\:create\(\) expects array\<string, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Parameter \#1 \$string of function substr expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Possibly invalid array key type array\<mixed\>\|string\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Property Omnilab\\Tides\\Tests\\TidesSourceTest\:\:\$calls \(list\<array\{string, array\<string, string\>\}\>\) does not accept non\-empty\-list\<array\{string, array\<int\|string, array\<mixed\>\|string\>\}\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: Tests/TidesSourceTest.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''lat'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''lng'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''lon'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''t'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset ''v'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot access offset 0 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 2
+			path: TidesSource.php
+
+		-
+			message: '#^Match expression does not handle remaining value\: string$#'
+			identifier: match.unhandled
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Parameter \#1 \$text of static method Omnilab\\Source\\HttpSource\:\:text\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 9
+			path: TidesSource.php
+
+		-
+			message: '#^Parameter \#3 \$value of class Omnilab\\Model\\Property constructor expects bool\|float\|int\|Omnilab\\Model\\Quantity\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: TidesSource.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 2
+			path: TidesSourceFactory.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 4
+			path: TidesSourceFactory.php

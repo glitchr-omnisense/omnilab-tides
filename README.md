@@ -42,6 +42,17 @@ under heavy load ("sleep statements" between successive calls) and to download o
 need: the source waits half a second between two calls, sends `application=omnilab`, and keeps
 each request within the API's length limits.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://api.tidesandcurrents.noaa.gov/api/prod/ on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: US public domain (17 U.S.C. 105); commercial use: allowed.
+- Credit: not required: NOAA/NOS/CO-OPS (Tides and Currents) (https://tidesandcurrents.noaa.gov/).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

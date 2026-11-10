@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "tides",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": false,
+            "text": "NOAA/NOS/CO-OPS (Tides and Currents)",
+            "url": "https://tidesandcurrents.noaa.gov/",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": "US public domain (17 U.S.C. 105)"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://tidesandcurrents.noaa.gov/disclaimers.html",
+        "policy": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "co-ops.userservices@noaa.gov",
+        "notes": "API page read 2026-11-10: CO-OPS throttles 'the quantity / volume of data queries received from a singular customer' and recommends 'sleep statements' between successive calls, without a figure; download only the data needed. Per-request length limits: 1-minute data 4 days, 6-minute data 1 month, hourly and high/low 1 year, daily 10 years, monthly 200 years, currents 1 month (all bins 7 days), high/low predictions 10 years, max/slack predictions 1 year. The 'application' parameter is optional but asked for (company, organisation or application name) to identify callers in logs. Disclaimers page: information in the public domain unless annotated otherwise; NOS 'requests that attribution be given' (a request); must not be modified and presented as official; raw/preliminary data used only with caution. Covers both https://api.tidesandcurrents.noaa.gov/api/prod/datagetter and .../mdapi/prod/webapi/."
+    }
+}
