@@ -33,6 +33,34 @@ omnilab:
 
 See [docs/](docs/index.md) for what is read, how it maps, and what the APIs do not give here.
 
+## Install and a first call
+
+```sh
+composer require omnilab/tides
+```
+
+A real call, with no account and no key: NOAA CO-OPS' station at The Battery, New York. `mailto` is
+your address, sent in the User-Agent so that the service can reach you before it blocks a caller;
+the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Tides\TidesSourceFactory;
+
+$tides = (new TidesSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$battery = $tides->entity('coops:8518750');
+echo $battery->label, ' ', $battery->place, "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+The Battery 40.700554,-74.01417
+```
+
 ## Terms of use
 
 CO-OPS's data are NOAA's, in the U.S. public domain; credit NOAA CO-OPS (Tides and Currents)
